@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+application {
+    mainClass = 'org.example.Main'
+}
+
+dependencies {
+    implementation 'mysql:mysql-connector-java:8.0.30'
+    implementation 'org.quartz-scheduler:quartz:2.3.2'
+    implementation 'org.slf4j:slf4j-api:2.0.2'
+    implementation 'org.slf4j:slf4j-simple:2.0.2'
+}
+
